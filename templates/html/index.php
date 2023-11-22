@@ -36,7 +36,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="servicos.php">Serviços</a>
                         </li>
-                        <li class="nav-item" style="float: right;">
+                        <li class="nav-item">
                             <a class="nav-link" href="login.php">Entrar</a>
                         </li>
                     </ul>

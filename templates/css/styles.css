@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: "border-box";
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Início estilo NavBar */
@@ -26,4 +26,38 @@
 .navbar a:hover{
   color: #df8d2c;
   transition: .1s;
+}
+
+main h2{
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+section {
+  background-color: #F2F2F2;
+  width: 100%;
+  position: relative;
+  padding: 34px 10px 48px;
+}
+
+.hemograma {
+  width: 400px;
+  height: 235px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+}
+.eletro {
+  width: 400px;
+  height: 235px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+}
+.ressonancia {
+  width: 400px;
+  height: 235px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
 }
