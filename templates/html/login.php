@@ -13,12 +13,12 @@
         <h2>Login</h2>
         <form action="" method="get">
             <div class="input-field">
-                <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário">
+                <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário" required>
                 <div class="underline"></div>
             </div>
 
             <div class="input-field">
-                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 <div class="underline"></div>
             </div>
 

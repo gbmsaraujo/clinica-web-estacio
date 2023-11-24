@@ -34,13 +34,17 @@
               <a class="nav-link" href="quemsomos.php">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicos.php">Serviços</a>
+              <a class="nav-link" href="exames.php">Exames</a>
             </li>
-            <li class="nav-item" style="float: right;">
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro_usu.php">Cadastrar-se</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="login.php">Entrar</a>
             </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </header>
@@ -90,7 +94,7 @@
   <section class="serv-sec3">
     <p>Agende sua consulta na Clínica Médica Rede Health e confie em nossa equipe para cuidar da sua saúde com dedicação, expertise e tecnologia avançada. Seu bem-estar é a nossa prioridade.</p>
     <br>
-    <a href="login.php" class="btn btn-primary agendar" >Clique aqui para agendar!</a>
+    <a href="login.php" class="btn btn-primary agendar">Clique aqui para agendar!</a>
   </section>
 
 

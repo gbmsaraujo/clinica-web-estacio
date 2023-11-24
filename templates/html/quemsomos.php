@@ -34,13 +34,17 @@
               <a class="nav-link" href="quemsomos.php">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicos.php">Serviços</a>
+              <a class="nav-link" href="exames.php">Exames</a>
             </li>
-            <li class="nav-item" style="float: right;">
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro_usu.php">Cadastrar-se</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="login.php">Entrar</a>
             </li>
           </ul>
         </div>
+
       </div>
     </nav>
   </header>
