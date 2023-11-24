@@ -96,7 +96,7 @@
 
   <footer>
     <!-- place footer here -->
-    <p>&copy; 2023 Rede Health</p>
+    <p> Rede Health &copy; 2023</p>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
