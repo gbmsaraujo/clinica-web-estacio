@@ -52,7 +52,7 @@
     <div style="padding:15px;" id="main" class="container-fluid">
       <div id="top" class="row">
         <div class="col-md-11">
-          <h2>Cadastro Alunos</h2>
+          <h2>Cadastro Usuários</h2>
         </div>
       </div>
 
@@ -148,7 +148,7 @@
       </form>
     </div>
   </main>
-  <footer>
+  <footer style="">
     <!-- place footer here -->
     <p>Rede Health &copy; 2023 </p>
   </footer>
