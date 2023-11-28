@@ -36,7 +36,7 @@ if (mysqli_num_rows($query) != 1) {
 	// Redireciona o visitante
 	switch($_SESSION['UsuarioNivel']){
 		case 1: header("Location: ../templates/html/clientes.php"); exit;break;
-		case 2: header("Location: restrito2.php"); exit;break;
+		case 2: header("Location: ../templates/html/adm.php"); exit;break;
 	}
 }
 
