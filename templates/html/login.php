@@ -23,7 +23,9 @@
             </div>
 
             <input type="submit" value="Entrar">
-            <a href="cadastro_usu.php">Clique aqui para se cadastrar!</a>
+            <a class="register" href="cadastro_usu.php">Clique aqui para se cadastrar!</a>
+            <br>
+            <a class="voltar" href="index.php">Voltar</a>
         </form>
     </main>
 </body>
