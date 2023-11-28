@@ -17,7 +17,7 @@
 <body class="fundo-cadastro">
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">
                     Rede Health
@@ -62,7 +62,7 @@
         <!-- 1ª LINHA -->
         <div class="row">
           <div class="form-group col-md-12">
-            <label for="nome_aluno">Nome Completo</label>
+            <label for="nome">Nome Completo</label>
             <input type="text" class="form-control" name="nome" required>
           </div>
         </div>
@@ -72,7 +72,7 @@
         <!-- 2ª LINHA -->
         <div class="row">
           <div class="form-group col-md-5">
-            <label for="cpf_aluno">CPF</label>
+            <label for="cpf">CPF</label>
             <input type="text" class="form-control" name="cpf" required placeholder="Sem Pontuação">
           </div>
           <div class="form-group col-md-4">
@@ -80,11 +80,11 @@
             <input type="date" class="form-control" name="dt_nasc" required>
           </div>
           <div class="form-group col-md-3">
-            <label for="sexo_aluno">Sexo</label>
+            <label for="sexo">Sexo</label>
             <div>
               <input type="radio" class="form-check-label" name="sexo" value="M"> Masculino
               <br>
-              <input type="radio" name="sexo_aluno" value="F">Feminino
+              <input type="radio" name="sexo" value="F">Feminino
             </div>
           </div>
         </div>

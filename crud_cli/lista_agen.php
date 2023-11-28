@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Lista de Usuarios</title>
+    <title>Lista de Agendamentos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,10 +29,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Agendamentos</a>
+                            <a class="nav-link" aria-current="page" href="lista_agen.php">Agendamentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="lista_cli.php">Usuarios</a>
+                            <a class="nav-link" href="../templates/html/agendar.php">Agendar Exame</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
         <div id="main" class="container-fluid">
             <div id="top" class="row">
                 <div class="col-md-10">
-                    <h2>Usuários</h2>
+                    <h2>Agendamentos</h2>
                 </div>
             </div>
             <hr />
@@ -58,22 +58,20 @@
                     $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
                     $inicio = ($quantidade * $pagina) - $quantidade;
 
-                    $data = mysqli_query($con, "select * from usuario order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
+                    $data = mysqli_query($con, "select * from consulta order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
 
 
                     echo "<table class='table table-striped' cellspacing='0' cellpading='0'>";
                     echo "<thead><tr>";
                     echo "<td><strong>CPF</strong></td>";
-                    echo "<td><strong>Nome</strong></td>";
-                    echo "<td><strong>Sexo</strong></td>";
-                    echo "<td><strong>Nascimento</strong></td>";
+                    echo "<td><strong>Exame</strong></td>";
+                    echo "<td><strong>Data de Realização</strong></td>";
                     echo "</tr></thead><tbody>";
                     while ($info = mysqli_fetch_array($data)) {
                         echo "<tr>";
                         echo "<td>" . $info['cpf'] . "</td>";
-                        echo "<td>" . $info['nome'] . "</td>";
-                        echo "<td>" . $info['sexo'] . " </td>";
-                        echo "<td>" . date('d/m/Y', strtotime($info['nascimento'])) . "</td>"; //Funções para converter formato da data do MySQL
+                        echo "<td>" . $info['exame'] . "</td>";
+                        echo "<td>" . date('d/m/Y', strtotime($info['data'])) . "</td>"; //Funções para converter formato da data do MySQL
                     }
                     echo "</tr></tbody></table>";
                     ?>
