@@ -58,12 +58,12 @@
 
       <br>
 
-      <form action="?page=insere_alu" method="post">
+      <form action="../../crud_cli/insere_cli.php" method="post">
         <!-- 1ª LINHA -->
         <div class="row">
           <div class="form-group col-md-12">
             <label for="nome_aluno">Nome Completo</label>
-            <input type="text" class="form-control" name="nome_aluno" required>
+            <input type="text" class="form-control" name="nome" required>
           </div>
         </div>
 
@@ -73,7 +73,7 @@
         <div class="row">
           <div class="form-group col-md-5">
             <label for="cpf_aluno">CPF</label>
-            <input type="text" class="form-control" name="cpf_aluno" required placeholder="Sem Pontuação">
+            <input type="text" class="form-control" name="cpf" required placeholder="Sem Pontuação">
           </div>
           <div class="form-group col-md-4">
             <label for="dt_nasc">Data Nascimento</label>
@@ -82,9 +82,9 @@
           <div class="form-group col-md-3">
             <label for="sexo_aluno">Sexo</label>
             <div>
-              <input type="radio" class="form-check-label" name="sexo_aluno" value="M" required> Masculino
+              <input type="radio" class="form-check-label" name="sexo" value="M"> Masculino
               <br>
-              <input type="radio" name="sexo_aluno" value="F" required>Feminino
+              <input type="radio" name="sexo_aluno" value="F">Feminino
             </div>
           </div>
         </div>
@@ -131,6 +131,20 @@
           <div class="form-group col-md-4">
             <label for="uf">UF</label>
             <input type="text" name="uf" class="form-control" required>
+          </div>
+        </div>
+        <br>
+
+        <!-- 6° LINHA -->
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="login">Login</label>
+            <input type="text" name="login" class="form-control" required>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="uf">Senha</label>
+            <input type="password" name="senha" class="form-control" required>
           </div>
         </div>
 
