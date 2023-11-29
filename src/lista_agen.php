@@ -51,7 +51,7 @@
             <div id="list" class="row">
                 <div class="table-responsive col-md-12">
                     <?php
-                    $con = mysqli_connect("localhost", "root", "", "projeto");
+                    $con = mysqli_connect("localhost", "root", "", "clinica_web");
 
                     $quantidade = 5;
 
