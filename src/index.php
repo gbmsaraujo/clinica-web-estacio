@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -57,13 +57,13 @@
         <div id="carouselExampleControls" class="carousel slide carrossel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/medicos.jpeg" class="d-block w-100 medicos" alt="...">
+                    <img src="./images/medicos.jpeg" class="d-block w-100 medicos" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/medica-foda.jpg" class="d-block w-100 medica-foda" alt="...">
+                    <img src="./images/medica-foda.jpg" class="d-block w-100 medica-foda" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/clinica.jpg" class="d-block w-100 clinica" alt="...">
+                    <img src="./images/clinica.jpg" class="d-block w-100 clinica" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

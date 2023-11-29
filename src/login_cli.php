@@ -1,9 +1,6 @@
 <?php
 include('./conexao.php');
 
-// $_POST['email'] = 'gabriel.araujo@gmail.com';
-// $_POST['senha'] = '123456';
-
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if (strlen($_POST['email']) == 0) {
         echo "Preencha seu e-mail";

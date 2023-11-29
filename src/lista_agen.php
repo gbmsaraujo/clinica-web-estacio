@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../templates/css/lista_usu.css">
+    <link rel="stylesheet" href="css/lista_usu.css">
 
 </head>
 
@@ -32,7 +32,7 @@
                             <a class="nav-link" aria-current="page" href="lista_agen.php">Agendamentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../templates/html/agendar.php">Agendar Exame</a>
+                            <a class="nav-link" href="agendar.php">Agendar Exame</a>
                         </li>
                     </ul>
                 </div>
@@ -53,62 +53,30 @@
                     <?php
                     $con = mysqli_connect("localhost", "root", "", "clinica_web");
 
-                    $quantidade = 5;
 
-                    $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
-                    $inicio = ($quantidade * $pagina) - $quantidade;
-
-                    $data = mysqli_query($con, "select * from consulta order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
+                    $data = mysqli_query($con, "select * from consulta order by id ") or die(mysqli_error($con));
 
 
                     echo "<table class='table table-striped' cellspacing='0' cellpading='0'>";
                     echo "<thead><tr>";
-                    echo "<td><strong>CPF</strong></td>";
+                    echo "<td><strong>Id</strong></td>";
                     echo "<td><strong>Exame</strong></td>";
                     echo "<td><strong>Data de Realização</strong></td>";
+                    echo "<td class='actions d-flex justify-content-center'><strong>Ações</strong></td>"; 
                     echo "</tr></thead><tbody>";
                     while ($info = mysqli_fetch_array($data)) {
                         echo "<tr>";
-                        echo "<td>" . $info['cpf'] . "</td>";
+                        echo "<td>" . $info['id'] . "</td>";
                         echo "<td>" . $info['exame'] . "</td>";
                         echo "<td>" . date('d/m/Y', strtotime($info['data'])) . "</td>"; //Funções para converter formato da data do MySQL
+                        echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
+                        echo "<a class='btn btn-warning btn-xs' href=?page=fedita_alu&id_aluno=".$info['id']."> Editar </a>"; 
+                        echo "<a href=?page=excluir_alu&id_aluno=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
                     }
                     echo "</tr></tbody></table>";
                     ?>
                 </div>
 
-            </div>
-            <!-- PAGINAÇÃO -->
-
-            <div id="bottom" class="row">
-                <div class="col-md-12">
-                    <?php
-                    $sqlTotal         = "select cpf from usuario;";
-                    $qrTotal          = mysqli_query($con, $sqlTotal) or die(mysqli_error($con));
-                    $numTotal         = mysqli_num_rows($qrTotal);
-                    $totalpagina = (ceil($numTotal / $quantidade) <= 0) ? 1 : ceil($numTotal / $quantidade);
-
-                    $exibir = 3;
-
-                    $anterior = (($pagina - 1) <= 0) ? 1 : $pagina - 1;
-                    $posterior = (($pagina + 1) >= $totalpagina) ? $totalpagina : $pagina + 1;
-
-                    echo "<ul class='pagination'>";
-                    echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=1'> Primeira</a></li> ";
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$anterior\"> Anterior</a></li> ";
-
-                    echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=" . $pagina . "'><strong>" . $pagina . "</strong></a></li> ";
-
-                    for ($i = $pagina + 1; $i < $pagina + $exibir; $i++) {
-                        if ($i <= $totalpagina)
-                            echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=" . $i . "'> " . $i . " </a></li> ";
-                    }
-
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$posterior\"> Pr&oacute;xima</a></li> ";
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$totalpagina\"> &Uacute;ltima</a></li></ul>";
-
-                    ?>
-                </div>
             </div>
         </div>
     </main>

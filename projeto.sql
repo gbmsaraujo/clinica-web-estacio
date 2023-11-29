@@ -13,9 +13,9 @@ CREATE TABLE IF NOT EXISTS `paciente` (
   `bairro` varchar(50) NOT NULL,
   `cidade` varchar(50) NOT NULL,
   `uf` char(2) NOT NULL,
-  `login` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `nivel` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `senha` varchar(100) NOT NULL,
+  `nivel` int(1) NOT NULL,
   PRIMARY KEY (`cpf`)
 );
 
@@ -36,4 +36,4 @@ CHANGE COLUMN login email varchar(50);
 
 
 INSERT INTO paciente 
-VALUES('13975488874','Gabriel Araujo', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'gabriel.araujo@gmail.com', '123456', 13 );
+VALUES('13975488874','Gabriel Araujo', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'gabriel.araujo@gmail.com', '123456', 1 );

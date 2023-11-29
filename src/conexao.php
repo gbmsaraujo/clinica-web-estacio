@@ -13,9 +13,9 @@ if ($mysqli->error) {
 }
 
 
-$sql_code = "SELECT * FROM paciente WHERE email = 'gabriel.araujo@gmail.com'";
-$sql_query = $mysqli->query($sql_code) or die('Falha na execução do código SQL: ' . $mysqli->error);
+// $sql_code = "SELECT * FROM paciente WHERE email = '$email' AND senha = '$senha'";
+// $sql_query = $mysqli->query($sql_code) or die('Falha na execução do código SQL: ' . $mysqli->error);
 
-$quantidade = $sql_query->num_rows;
+// $quantidade = $sql_query->num_rows;
 
 ?>

@@ -19,7 +19,7 @@
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="adm.php">
                     Rede Health
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +29,6 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./lista_agen.php">Agendamentos</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="./lista_cli.php">Usuarios</a>
                         </li>
                     </ul>
@@ -39,8 +36,8 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main style="padding: 10px; ">
+        <h1 style="font-size: 1.5em;">Bem Vindo à Área do Admin</h1>
     </main>
     <footer>
         <!-- place footer here -->

@@ -19,7 +19,7 @@
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="adm.php">
                     Rede Health
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,9 +28,6 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Agendamentos</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="lista_cli.php">Usuarios</a>
                         </li>
@@ -43,7 +40,7 @@
         <div id="main" class="container-fluid">
             <div id="top" class="row">
                 <div class="col-md-10">
-                    <h2>Usuários</h2>
+                    <h2>Usuários Cadastrados</h2>
                 </div>
             </div>
             <hr />
@@ -53,12 +50,7 @@
                     <?php
                     $con = mysqli_connect("localhost", "root", "", "clinica_web");
 
-                    $quantidade = 5;
-
-                    $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
-                    $inicio = ($quantidade * $pagina) - $quantidade;
-
-                    $data = mysqli_query($con, "select * from paciente order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
+                    $data = mysqli_query($con, "select * from paciente order by cpf") or die(mysqli_error($con));
 
 
                     echo "<table class='table table-striped' cellspacing='0' cellpading='0'>";
@@ -67,6 +59,7 @@
                     echo "<td><strong>Nome</strong></td>";
                     echo "<td><strong>Sexo</strong></td>";
                     echo "<td><strong>Nascimento</strong></td>";
+                    echo "<td class='actions d-flex justify-content-center'><strong>Ações</strong></td>"; 
                     echo "</tr></thead><tbody>";
                     while ($info = mysqli_fetch_array($data)) {
                         echo "<tr>";
@@ -74,43 +67,14 @@
                         echo "<td>" . $info['nome'] . "</td>";
                         echo "<td>" . $info['sexo'] . " </td>";
                         echo "<td>" . date('d/m/Y', strtotime($info['nascimento'])) . "</td>"; //Funções para converter formato da data do MySQL
+                        echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
+                        echo "<a class='btn btn-warning btn-xs' href=edita_cli.php?cpf=".$info['cpf']."> Editar </a>"; 
+                        echo "<a href=delete_cli?cpf=".$info['cpf']." class='btn btn-danger btn-xs'> Excluir </a></td>";
                     }
                     echo "</tr></tbody></table>";
                     ?>
                 </div>
 
-            </div>
-            <!-- PAGINAÇÃO -->
-
-            <div id="bottom" class="row">
-                <div class="col-md-12">
-                    <?php
-                    $sqlTotal         = "select cpf from usuario;";
-                    $qrTotal          = mysqli_query($con, $sqlTotal) or die(mysqli_error($con));
-                    $numTotal         = mysqli_num_rows($qrTotal);
-                    $totalpagina = (ceil($numTotal / $quantidade) <= 0) ? 1 : ceil($numTotal / $quantidade);
-
-                    $exibir = 3;
-
-                    $anterior = (($pagina - 1) <= 0) ? 1 : $pagina - 1;
-                    $posterior = (($pagina + 1) >= $totalpagina) ? $totalpagina : $pagina + 1;
-
-                    echo "<ul class='pagination'>";
-                    echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=1'> Primeira</a></li> ";
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$anterior\"> Anterior</a></li> ";
-
-                    echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=" . $pagina . "'><strong>" . $pagina . "</strong></a></li> ";
-
-                    for ($i = $pagina + 1; $i < $pagina + $exibir; $i++) {
-                        if ($i <= $totalpagina)
-                            echo "<li class='page-item'><a class='page-link' href='?page=lista_alu&pagina=" . $i . "'> " . $i . " </a></li> ";
-                    }
-
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$posterior\"> Pr&oacute;xima</a></li> ";
-                    echo "<li class='page-item'><a class='page-link' href=\"?page=lista_alu&pagina=$totalpagina\"> &Uacute;ltima</a></li></ul>";
-
-                    ?>
-                </div>
             </div>
         </div>
     </main>
