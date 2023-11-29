@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/adm.css">
+    <link rel="stylesheet" href="./css/clientes.css">
 
 </head>
 
@@ -29,10 +29,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="lista_agen.php">Agendamentos</a>
+                            <a class="nav-link" aria-current="page" href="./lista_agen.php">Agendamentos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../crud_cli/lista_cli.php">Usuarios</a>
+                            <a class="nav-link" href="agendar.php">Agendar Exame</a>
                         </li>
                     </ul>
                 </div>

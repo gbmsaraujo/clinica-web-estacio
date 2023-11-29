@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../../crud_cli/lista_agen.php">Agendamentos</a>
+                            <a class="nav-link" aria-current="page" href="lista_agen.php">Agendamentos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="agendar.php">Agendar Exame</a>
@@ -49,7 +49,7 @@
 
             <br>
 
-            <form action="../../crud_cli/insere_agen.php" method="post">
+            <form action="./insere_agen.php" method="post">
                 <!-- 1ª LINHA -->
                 <div class="row">
                     <div class="form-group col-md-5">
@@ -86,7 +86,7 @@
                 <div id="actions" class="row">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="../../crud_cli/lista_agen.php" class="btn btn-danger">Cancelar</a>
+                        <a href="./lista_agen.php" class="btn btn-danger">Cancelar</a>
                     </div>
                 </div>
             </form>

@@ -1,8 +1,8 @@
 <?php
-include('./crud_cli/conexao.php');
+include('./conexao.php');
 
-$_POST['email'] = 'gabriel.araujo@gmail.com';
-$_POST['senha'] = '123456';
+// $_POST['email'] = 'gabriel.araujo@gmail.com';
+// $_POST['senha'] = '123456';
 
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if (strlen($_POST['email']) == 0) {
@@ -30,7 +30,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['cpf'] = $usuario['cpf'];
             $_SESSION['email'] = $usuario['email'];
 
-            header("Location: ./templates/html/clientes.php" );
+            header("Location: ./clientes.php" );
             exit();
         } else {
             echo "Falha ao Logar! Email ou senha incorretos";

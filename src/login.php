@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
     <main class="container">
         <h2>Login</h2>
-        <form action="./crud_cli/login_cli.php" method="POST">
+        <form action="login_cli.php" method="POST">
             <div class="input-field">
                 <input type="text" name="email" id="email" placeholder="Email do Usuário" required>
                 <div class="underline"></div>

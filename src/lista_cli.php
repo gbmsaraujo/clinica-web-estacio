@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../templates/css/lista_usu.css">
+    <link rel="stylesheet" href="./css/lista_usu.css">
 
 </head>
 
@@ -51,14 +51,14 @@
             <div id="list" class="row">
                 <div class="table-responsive col-md-12">
                     <?php
-                    $con = mysqli_connect("localhost", "root", "", "projeto");
+                    $con = mysqli_connect("localhost", "root", "", "clinica_web");
 
                     $quantidade = 5;
 
                     $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
                     $inicio = ($quantidade * $pagina) - $quantidade;
 
-                    $data = mysqli_query($con, "select * from usuario order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
+                    $data = mysqli_query($con, "select * from paciente order by cpf asc limit $inicio, $quantidade") or die(mysqli_error($con));
 
 
                     echo "<table class='table table-striped' cellspacing='0' cellpading='0'>";

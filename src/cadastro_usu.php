@@ -58,7 +58,7 @@
 
       <br>
 
-      <form action="../../crud_cli/insere_cli.php" method="post">
+      <form action="./insere_cli.php" method="post">
         <!-- 1ª LINHA -->
         <div class="row">
           <div class="form-group col-md-12">
