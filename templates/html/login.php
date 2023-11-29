@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,9 +12,9 @@
 <body>
     <main class="container">
         <h2>Login</h2>
-        <form action="../../base/validacao.php" method="get">
+        <form action="./crud_cli/login_cli.php" method="POST">
             <div class="input-field">
-                <input type="text" name="login" id="login" placeholder="Nome de Usuário" required>
+                <input type="text" name="email" id="email" placeholder="Email do Usuário" required>
                 <div class="underline"></div>
             </div>
 
