@@ -69,7 +69,7 @@
                         echo "<td>" . date('d/m/Y', strtotime($info['nascimento'])) . "</td>"; //Funções para converter formato da data do MySQL
                         echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
                         echo "<a class='btn btn-warning btn-xs' href=edita_cli.php?cpf=".$info['cpf']."> Editar </a>"; 
-                        echo "<a href=delete_cli?cpf=".$info['cpf']." class='btn btn-danger btn-xs'> Excluir </a></td>";
+                        echo "<a href=delete_cli.php?cpf=".$info['cpf']." class='btn btn-danger btn-xs'> Excluir </a></td>";
                     }
                     echo "</tr></tbody></table>";
                     ?>
