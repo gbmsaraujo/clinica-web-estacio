@@ -39,6 +39,9 @@ include("protection.php")
                         <li class="nav-item">
                             <a class="nav-link" href="agendar.php">Agendar Exame</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sair</a>
+                        </li>
                     </ul>
                 </div>
             </div>

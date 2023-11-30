@@ -40,6 +40,9 @@ include("protection.php")
                         <li class="nav-item">
                             <a class="nav-link" href="agendar.php">Agendar Exame</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sair</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -82,9 +85,9 @@ include("protection.php")
         <!-- Outros membros da equipe -->
     </section>
 
-    
+
     <footer>
-    <p>Rede Health &copy; 2023 </p>
+        <p>Rede Health &copy; 2023 </p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

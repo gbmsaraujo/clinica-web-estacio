@@ -37,6 +37,9 @@ include("protection.php")
                         <li class="nav-item">
                             <a class="nav-link" href="./lista_cli.php">Usuarios</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sair</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -44,6 +47,7 @@ include("protection.php")
     </header>
     <main style="padding: 10px; ">
         <h1 style="font-size: 1.5em;">Bem Vindo à Área do Admin</h1>
+        <p>Aqui você poderá ver e administrar todos os seus usuarios do sistema!</p>
     </main>
     <footer>
         <!-- place footer here -->

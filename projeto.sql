@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `paciente` (
 
 
 CREATE TABLE IF NOT EXISTS `consulta` (
-  `id` INT NOT NULL PRIMARY KEY,	
+  `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,	
   `cpf_paciente` char(11) NOT NULL,
   `data` date NOT NULL,
   `exame` varchar(50) NOT NULL,
@@ -30,5 +30,7 @@ CREATE TABLE IF NOT EXISTS `consulta` (
   
 );
 
+-- Este usuário está registrado como adiministrador (nivel = 2) , faça login ele para acessar a pagina de admin. Os demais usuários cadastrados serão cadastrados como usuários normais (nivel = 1)
+ 
 INSERT INTO paciente 
-VALUES('13975488874','Gabriel Araujo', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'gabriel.araujo@gmail.com', '123456', 2 );
+VALUES('13975488874','ADMIN', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'admin@gmail.com', '123', 2 );

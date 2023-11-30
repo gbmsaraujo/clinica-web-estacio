@@ -36,6 +36,9 @@ include("protection.php")
                         <li class="nav-item">
                             <a class="nav-link" href="lista_cli.php">Usuarios</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sair</a>
+                        </li>
                     </ul>
                 </div>
             </div>
