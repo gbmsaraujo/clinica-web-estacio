@@ -2,17 +2,17 @@
 
 $con = mysqli_connect("localhost", "root", "", "clinica_web");
 
-$cpf = (int) @$_GET['cpf'];
+$id = (int) @$_GET['id'];
  
-$sql = "DELETE FROM paciente WHERE cpf = '$cpf';"; 
+$sql = "DELETE FROM consulta WHERE id = '$id';"; 
 
 $resultado = mysqli_query($con, $sql)or die(mysqli_error($con));
 
 if ($resultado) {
-    header('Location: lista_cli.php');
+    header('Location: lista_agen.php');
     mysqli_close($con);
 }else{
-    header('Location: lista_cli.php');
+    header('Location: lista_agen.php');
     mysqli_close($con);
 }
 ?>

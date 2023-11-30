@@ -15,7 +15,7 @@
 </head>
 
 <?php
-    $con = mysqli_connect("localhost", "root", "", "clinica_web");
+  $con = mysqli_connect("localhost", "root", "", "clinica_web");
 	$cpf = (int) $_GET['cpf'];
 	$sql = mysqli_query($con, "select * from paciente where cpf = '".$cpf."';");
 	$row = mysqli_fetch_array($sql);

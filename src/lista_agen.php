@@ -70,8 +70,8 @@
                         echo "<td>" . $info['exame'] . "</td>";
                         echo "<td>" . date('d/m/Y', strtotime($info['data'])) . "</td>"; //Funções para converter formato da data do MySQL
                         echo "<td class='actions btn-group-sm d-flex justify-content-center'>";
-                        echo "<a class='btn btn-warning btn-xs' href=?page=fedita_alu&id_aluno=".$info['id']."> Editar </a>"; 
-                        echo "<a href=?page=excluir_alu&id_aluno=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
+                        echo "<a class='btn btn-warning btn-xs' href=edita_agen.php?id=".$info['id']."> Editar </a>"; 
+                        echo "<a href=delete_agen.php?id=".$info['id']." class='btn btn-danger btn-xs'> Excluir </a></td>";
                     }
                     echo "</tr></tbody></table>";
                     ?>
