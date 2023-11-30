@@ -53,8 +53,7 @@ include("protection.php")
 
     <section id="sobre">
         <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius eros eget sapien fermentum,
-            quis ultricies sapien consequat.</p>
+        <p>Somos uma clínica médica especializada em exames laboratoriais. Nossa equipe possui os profissionais mais bem qualificados do mercado na atualidade.</p>
         <!-- Mais informações sobre a clínica -->
     </section>
 

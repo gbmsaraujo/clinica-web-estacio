@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 <header>
@@ -43,12 +43,15 @@
             </div>
         </nav>
     </header>
-    <section>
-    <p>"Você não pode acessar essa página, pois não está logado.<p>
-    <a href="login.php">Logar</a>"
+    <section class="redirect-section">
+    <h2>Você não pode acessar essa página, pois não está logado.<h2>
+
+    <br>
+
+    <a class="redirect-button" href="login.php">Logar</a>
 
     </section>
-    <footer>
+    <footer style="position: fixed; bottom: 0;">
         <p>Rede Health &copy; 2023 </p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->

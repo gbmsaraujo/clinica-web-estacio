@@ -28,12 +28,12 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['email'] = $usuario['email'];
             $_SESSION['nivel'] = $usuario['nivel'];
 
-            // switch($_SESSION['nivel']){
-            //     case 1: header("Location: clientes.php"); exit;break;
-            //     case 2: header("Location: adm.php"); exit;break;
-            // }
-            header("Location: ./clientes.php" );
-            exit();
+            switch($_SESSION['nivel']){
+                case 1: header("Location: clientes.php"); exit;break;
+                case 2: header("Location: adm.php"); exit;break;
+            }
+            // header("Location: ./clientes.php" );
+            // exit();
         } else {
             echo "Falha ao Logar! Email ou senha incorretos";
         }

@@ -26,14 +26,9 @@ CREATE TABLE IF NOT EXISTS `consulta` (
   `data` date NOT NULL,
   `exame` varchar(50) NOT NULL,
   
-  FOREIGN KEY (`cpf_paciente`) REFERENCES `paciente` (`cpf`)
+  FOREIGN KEY (`cpf_paciente`) REFERENCES `paciente` (`cpf`) ON DELETE CASCADE 
   
 );
 
-
-ALTER TABLE clinica_web.paciente 
-CHANGE COLUMN login email varchar(50);
-
-
 INSERT INTO paciente 
-VALUES('13975488874','Gabriel Araujo', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'gabriel.araujo@gmail.com', '123456', 1 );
+VALUES('13975488874','Gabriel Araujo', '1993-02-15', 'M', 'Rua larica', 55, 'Apt 230', 'Riachuelo', 'RJ', 'RJ', 'gabriel.araujo@gmail.com', '123456', 2 );

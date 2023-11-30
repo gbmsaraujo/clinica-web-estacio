@@ -22,7 +22,7 @@ include("protection.php")
         <!-- place navbar here -->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="clientes.php">
                     Rede Health
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +95,7 @@ include("protection.php")
             </form>
         </div>
     </main>
-    <footer style="">
+    <footer style="position: fixed; bottom: 0;">
         <!-- place footer here -->
         <p>Rede Health &copy; 2023 </p>
     </footer>
