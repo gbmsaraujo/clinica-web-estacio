@@ -1,3 +1,9 @@
+<?php
+
+include("protection.php")
+
+
+?>
 <!doctype html>
 <html lang="en">
 
