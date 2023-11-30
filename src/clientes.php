@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/clientes.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -39,11 +40,47 @@
             </div>
         </nav>
     </header>
-    <main>
 
-    </main>
+    <section id="banner">
+        <h1>Bem-vindo à Clínica Médica</h1>
+        <p>Oferecendo cuidados de saúde de qualidade</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius eros eget sapien fermentum,
+            quis ultricies sapien consequat.</p>
+        <!-- Mais informações sobre a clínica -->
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Consulta médica geral</li>
+            <li>Exames laboratoriais</li>
+            <li>Atendimento especializado</li>
+            <!-- Outros serviços oferecidos -->
+        </ul>
+    </section>
+
+    <section id="equipe">
+        <h2>Equipe</h2>
+        <div class="team-member">
+            <img src="./images/medico-1.avif" alt="Membro da Equipe">
+            <h3>Dr. João Silva</h3>
+            <p>Especialista em Cardiologia</p>
+        </div>
+        <div class="team-member">
+            <img src="./images/medico-2.avif" alt="Membro da Equipe">
+            <h3>Dra. Maria Souza</h3>
+            <p>Especialista em Pediatria</p>
+        </div>
+        <!-- Outros membros da equipe -->
+    </section>
+
+    
     <footer>
-        <!-- place footer here -->
+    <p>Rede Health &copy; 2023 </p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

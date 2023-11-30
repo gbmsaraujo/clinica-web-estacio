@@ -1,7 +1,7 @@
 <?php
 
-$usuario = 'root';
-$senha = '';
+$usuario = 'gabriel';
+$senha = 'Ari&l0515';
 $database = 'clinica_web';
 $host = 'localhost';
 

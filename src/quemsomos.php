@@ -49,6 +49,19 @@
     </nav>
   </header>
   <main>
+    
+  <section id="quem-somos">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <p>A Rede Health é uma clínica médica comprometida em oferecer cuidados de saúde de alta qualidade para
+                nossos pacientes. Estamos dedicados a fornecer tratamentos eficazes e compassivos para uma variedade de
+                condições médicas.</p>
+            <p>Nossa equipe é composta por profissionais altamente qualificados e experientes, incluindo médicos,
+                enfermeiros e especialistas em várias áreas da medicina.</p>
+            <p>Nosso compromisso é promover a saúde e o bem-estar da comunidade, oferecendo atendimento médico de
+                excelência e serviços personalizados para cada paciente.</p>
+        </div>
+    </section>
 
   </main>
   <footer>
